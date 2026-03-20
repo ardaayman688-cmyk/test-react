@@ -23,6 +23,14 @@ export const data = [
         Option4:"Bin",
         ans: 1,
     },
+       {
+        question: "A Computer cannot Boot if it does not have the ?",
+        Option1:"Application Sofware",
+        Option2:"Internet",
+        Option3:"Operating System",
+        Option4:"Mouse",
+        ans: 3,
+    },
    
        {
         question: "First page of website is termed as?",

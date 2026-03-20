@@ -1,1 +1,112 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.signin {
+    width: 360px;
+    padding: 45px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+    color: white;
+}
+
+.signin h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.signin input {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 15px;
+}
+
+.signin button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column; /* يجعل العناصر فوق بعض */
+    align-items: flex-start; /* محاذاة لليسار */
+    margin-bottom: 25px;
+}
+
+.navbar h2 {
+    font-size: 18px;
+    color: blueviolet;
+    margin: 0;
+}
+
+.navbar p {
+    font-size: 14px;
+    color: #333;
+    margin: 4px 0 12px 0;
+}
+
+.navbar button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #ff4b5c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background: #ff2e44;
+}

@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './App.css';
-import Quiz from './quiz';
+import QuizApp from './quiz/quizApp';
+import SignIn from './quiz/signin';
+
 function App() {
+  const [user, setUser] = useState(localStorage.getItem("user") || null);
 
-return (
- 
- <>
-      <Quiz />
+  useEffect(() => {
+    if (user) {
+      localStorage.setItem("user", user);
+    }
+  }, [user]);
 
-    </>
-  
-    ); }
-     export default App;
+  return (
+    <div className="app">
+      {user ? (
+        <QuizApp user={user} setUser={setUser} />
+      ) : (
+        <SignIn setUser={setUser} />
+      )}
+    </div>
+  );
+}
+
+export default App;
